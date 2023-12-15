@@ -15,12 +15,3 @@ dir="/home/ajauwena/scratch/binf_6999/barley_merged"
 vcftools --vcf $dir/barley_merged_platypus_loci_imputed_subsetted.vcf --snps $dir/pruned_snp_ids.txt --recode --recode-INFO-all --out $dir/barley_merged_platypus_loci_imputed_pruned_subsetted
 
 vcftools --vcf $dir/barley_merged_platypus_loci_imputed_pruned_subsetted.recode.vcf --012 --out $dir/barley_merged_platypus_loci_imputed_pruned_subsetted_012
-
-# ----- Mine -----
-
-#module load StdEnv/2020 gcc/9.3.0 htslib/1.16 htslib/1.10.2 bcftools/1.16
-#module load htslib/1.16
-
-#vcftools --vcf $dir/barley_merged_platypus_loci_imputed_subsetted.vcf --thin 0.1 --out $dir/barley_merged_platypus_loci_imputed_pruned_subsetted.vcf
-
-#vcftools --vcf $dir/barley_merged_platypus_loci_imputed_pruned_subsetted.vcf --012 --out $dir/barley_merged_platypus_loci_imputed_pruned_subsetted_012.vcf
